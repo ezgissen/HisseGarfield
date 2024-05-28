@@ -1,0 +1,134 @@
+h1 {
+	color: rgb(77, 21, 1);
+	text-transform: uppercase;
+}
+
+h2 {
+	background-color: rgb(246, 193, 248);
+	height: 30px;
+}
+
+body {
+	background-image: url(arka2.png);
+	background-size: cover;
+}
+
+p {
+	font-size: 20px;
+	font-variant-caps: all-petite-caps;
+	font-display: inline;
+}
+
+ul {
+	list-style-type: none;
+	background-color: sienna;
+	width: 90%;
+	border-style: dotted;
+	border-color: rgb(255, 166, 0);
+	border-radius: 75px;
+}
+
+ul li {
+	padding: 5px;
+	display: inline-block;
+}
+
+ul li:hover {
+	background-color: rgb(246, 193, 248);
+}
+
+ul li a {
+	text-decoration: none;
+	color: rgb(255, 166, 0);
+	font-size: 22px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	border-style: solid;
+}
+
+.divOzellik {
+	background-image: url(https://avatars.mds.yandex.net/i?id=ffbf22bc382892f93ce92030e96d589aa4d82d67-9041991-images-thumbs&ref=rim&n=33&w=334&h=200);
+	background-size: center;
+	width: 97%;
+	height: 95px;
+	border: 7px inset black;
+	background-color: rgb(223, 121, 62);
+}
+
+#divUst {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation: ustten_gel 2s forwards;
+	height: 200px;
+	background-position: center center;
+	background-size: auto 100%;
+}
+
+#divUst h1 {
+	line-height: 1;
+	color: #efefef;
+	text-shadow: 2.5px 2.5px 2px black;
+	transition: all 0.5s;
+	cursor: default;
+}
+
+.icerik {
+	animation: soldan_gel 2s forwards;
+}
+
+@keyframes ustten_gel {
+	0% {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes soldan_gel {
+	0% {
+		opacity: 0;
+		transform: translateX(-10%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+#data-container {
+	margin-top: 20px;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 10px;
+	width: 90%;
+	text-align: left;
+}
+
+#data-container h3 {
+	color: #333;
+	margin-bottom: 10px;
+}
+
+#data-container p {
+	color: #555;
+	margin: 5px 0;
+}
+
+#data-container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.stock-data {
+	border: 5px solid #270101;
+	padding: 10px;
+	margin: 10px;
+	width: 200px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
